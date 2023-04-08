@@ -2,38 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <div class="header__logo">
+      <img src="./assets/images/logo.svg" alt="">
+    </div>
+    <div class="toggle__icon"><img src="./assets/images/icon-menu.svg" alt=""></div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="" class="nav__link">Features <img src="./assets/images/icon-arrow-down.svg" alt=""></a>
+          <ul class="nav__sublist">
+            <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-todo.svg" alt="" class="nav__item--icon"> Todo List</a></li>
+            <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-calendar.svg" alt="" class="nav__item--icon"> Calendar</a></li>
+            <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-reminders.svg" alt="" class="nav__item--icon"> Reminders</a></li>
+            <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-planning.svg" alt="" class="nav__item--icon"> Planning</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="" class="nav__link">Company <img src="./assets/images/icon-arrow-down.svg" alt=""></a>
+          <ul class="nav__sublist">
+            <li class="nav__item"><a href="" class="nav__link">History</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Our Team</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="" class="nav__link">Careers</a></li>
+        <li class="nav__item"><a href="" class="nav__link">About</a></li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="" class="nav__link">Login</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Register</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <!-- Main -->
+  <main>
+    <section class="hero">
+      <div class="hero__text">
+        <h1 class="hero__text--heading">Make remote work</h1>
+        <p class="hero__text--body">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="hero__text--btn">Learn more</button>
+        <div class="hero__client">
+          <img src="./assets/images/client-databiz.svg" alt="" class="hero__client--item">
+          <img src="./assets/images/client-audiophile.svg" alt="" class="hero__client--item">
+          <img src="./assets/images/client-meet.svg" alt="" class="hero__client--item">
+          <img src="./assets/images/client-maker.svg" alt="" class="hero__client--item">
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="./assets/images/image-hero-desktop.png" alt="">
+      </div>
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Wardah</a>.
   </div>
 </body>
 </html>
