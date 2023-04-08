@@ -1,0 +1,18 @@
+@use '../abstract' as *;
+
+body {
+    font-family: $font-family;
+    font-size: $fs-400;
+    font-weight: $fw-500;
+    color: $neutral-gray;
+}
+
+h1 {
+    font-size: $fs-800;
+    font-weight: $fw-700;
+    color: $neutral-black;
+}
+
+a {
+    color: $neutral-gray;
+}

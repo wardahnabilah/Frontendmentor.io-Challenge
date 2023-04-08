@@ -1,0 +1,18 @@
+@use '../abstract' as *;
+
+.btn {
+    font-family: inherit;
+    font-size: $fs-400;
+    font-weight: $fw-700;
+    padding: 1em 1.5em;
+    background-color: $neutral-black;
+    color: $neutral-white;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btn--ghost {
+    border: 1px solid $neutral-gray;
+    border-radius: 1rem;
+    padding: 1em 4em;
+}
