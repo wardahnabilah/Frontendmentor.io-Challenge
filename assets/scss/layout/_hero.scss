@@ -3,35 +3,82 @@
 .hero {
     display: flex;
     flex-direction: column-reverse;
+    gap: 3rem;
     text-align: center;
+
+    @include breakpoint-up(mobile-lg) {
+        padding: 8.125rem;
+        flex-direction: row;
+        gap: 6.875rem;
+        align-items: end;
+        text-align: left;
+    }
 
     &__image {
         img {
             width: 100%;
+
+            &:first-child {
+                display: inline;
+                
+                @include breakpoint-up(mobile-lg) {
+                    display: none;
+                }
+            }
+    
+            &:last-child {
+                display: none;
+    
+                @include breakpoint-up(mobile-lg) {
+                    display: inline;
+                }
+            }
         }
     }
 
     &__text {
-        padding-top: 2.875rem;
-        padding-bottom: 8rem;
-        
+        width: 100%;
+        padding-inline: .9rem;
+
+        @include breakpoint-up(mobile-lg) {
+            padding-inline: 2.5rem;
+        }
+
         &--body {
             margin-top: 1.5rem;
-            padding-inline: .9rem;
             line-height: 1.625rem;
+
+            @include breakpoint-up(mobile-lg) {
+                margin-top: 3rem;
+                padding-right: 6rem;
+            }
         }
 
         &--btn {
             margin-top: 1.5rem;
+
+            @include breakpoint-up(mobile-lg) {
+                margin-top: 3rem;
+            }
         }
 
         &--client {
             margin-top: 3rem;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            max-width: 30rem;
+
+            @include breakpoint-up(mobile-lg) {
+                margin-top: 6.5rem;
+            }
 
             img {
                 transform: scale(.75);
+
+                @include breakpoint-up(mobile-lg) {
+                    transform: scale(1); 
+                }
             }
         }
     }
