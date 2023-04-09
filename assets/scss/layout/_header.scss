@@ -1,0 +1,52 @@
+@use '../abstract' as *;
+
+header {
+    padding: 1.5rem min(5%, 2.5rem);
+    display: flex;
+    justify-content: space-between;
+
+    .nav {
+        width: 64%;
+        height: 100%;
+        padding: 1.5rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        background-color: $neutral-white;
+
+        .toggle__close {
+            text-align: right;
+        }
+
+        &__list {
+            margin-top: 1.5rem;
+
+            &--sublist {
+                padding-top: 1.75rem;
+                padding-left: 1.5rem;
+            }
+
+            &--login {
+                margin-top: 2.5rem;
+                display: grid;
+
+                .nav__item {
+                    font-size: $fs-300;
+                    margin-bottom: 1.125rem;
+                    margin-inline: auto;
+                }
+            }
+        }
+
+        &__item {
+            margin-bottom: 1.75rem;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}
