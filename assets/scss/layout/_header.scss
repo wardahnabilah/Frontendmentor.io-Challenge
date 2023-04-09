@@ -6,6 +6,18 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint-up(mobile-lg) {
+        padding: 1.875rem 2.5rem;
+        justify-content: flex-start;
+        gap: 4rem;    
+    }
+
+    .toggle__menu {
+        @include breakpoint-up(mobile-lg) {
+            display: none;
+        }
+    }
+
     .nav {
         width: 64%;
         height: 100%;
@@ -16,37 +28,72 @@ header {
         z-index: 9999;
         background-color: $neutral-white;
 
+        @include breakpoint-up(mobile-lg) {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            position: static;
+        }
+
         .toggle__close {
             text-align: right;
+
+            @include breakpoint-up(mobile-lg) {
+                display: none;
+            }
         }
 
         &__list {
             margin-top: 1.5rem;
 
+            @include breakpoint-up(mobile-lg) {
+                margin-top: 0;
+                margin-right: auto;
+                display: flex;
+                gap: 2.5rem;
+            }
+
             &--sublist {
                 padding-top: 1.75rem;
                 padding-left: 1.5rem;
 
-                .nav__link {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
+                @include breakpoint-up(mobile-lg) {
+                    display: none;
                 }
             }
 
             &--account {
                 margin-top: 2.5rem;
+
+                @include breakpoint-up(mobile-lg) {
+                    margin-top: 0;
+                    display: flex;
+                    gap: 2.5rem;
+                    align-items: center;
+                }
         
                 .nav__item {
                     font-size: $fs-300;
                     margin-bottom: 1.125rem;
                     text-align: center;
+
+                    @include breakpoint-up(mobile-lg) {
+                       font-size: $fs-400;
+                       margin-bottom: 0;
+                    }
                 }
             }
         }
 
         &__item {
             margin-bottom: 1.75rem;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
     }
 }
