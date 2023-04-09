@@ -12,6 +12,21 @@ header {
         gap: 4rem;    
     }
 
+    .features:hover, .company:hover, .nav__link:hover,
+    .btn--ghost:hover {
+        cursor: pointer;
+        @include breakpoint-up(mobile-lg) {
+            color: $neutral-black;
+            border-color: $neutral-black;   
+        }
+    }
+
+    .features:active, .company:active, .nav__link:active {
+        @include breakpoint-up(mobile-lg) {
+            color: $neutral-black;
+        }
+    }
+
     .toggle__menu {
         @include breakpoint-up(mobile-lg) {
             display: none;
@@ -59,7 +74,20 @@ header {
                 padding-left: 1.5rem;
 
                 @include breakpoint-up(mobile-lg) {
-                    display: none;
+                    min-width: 8.5rem;
+                    padding: 1.5rem;
+                    position: absolute;
+                    top: 2em;
+                    right: 0;
+                    background-color: $neutral-white;
+                    box-shadow: 0 2px 48px 0 $neutral-light-gray;
+                    border-radius: .625rem;
+                }
+
+                &-comp {
+                    @include breakpoint-up(mobile-lg) {
+                        left: 0;
+                    }
                 }
             }
 
@@ -92,10 +120,22 @@ header {
 
         &__item {
             margin-bottom: 1.75rem;
+
+            @include breakpoint-up(mobile-lg) {
+                margin-bottom: 1rem;
+                position: relative;
+            }
+
+            &--arrow {
+                margin-left: 1rem;
+                position: relative;
+                z-index: -1;
+            }
         }
 
         &__link {
             display: flex;
+            justify-content: flex-start;
             align-items: center;
             gap: 1rem;
         }

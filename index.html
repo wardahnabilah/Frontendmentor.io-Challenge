@@ -6,6 +6,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- Stylesheet Link -->
   <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- Script Link -->
+  <script src="./assets/js/script.js" defer></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
@@ -19,16 +21,23 @@
       <div class="toggle__close"><img src="./assets/images/icon-close-menu.svg" alt=""></div>
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="" class="nav__link">Features <img src="./assets/images/icon-arrow-down.svg" alt=""></a>
-          <ul class="nav__list--sublist">
+          <div class="features">
+            Features 
+            <img class="nav__item--arrow" src="./assets/images/icon-arrow-down.svg" alt="">
+          </div>
+          <ul class="nav__list--sublist hide">
             <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-todo.svg" alt="" class="nav__item--icon"> Todo List</a></li>
             <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-calendar.svg" alt="" class="nav__item--icon"> Calendar</a></li>
             <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-reminders.svg" alt="" class="nav__item--icon"> Reminders</a></li>
             <li class="nav__item"><a href="" class="nav__link"><img src="./assets/images/icon-planning.svg" alt="" class="nav__item--icon"> Planning</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="" class="nav__link">Company <img src="./assets/images/icon-arrow-down.svg" alt=""></a>
-          <ul class="nav__list--sublist">
+        <li class="nav__item">
+          <div class="company">
+            Company 
+            <img class="nav__item--arrow" src="./assets/images/icon-arrow-down.svg" alt="">
+          </div>
+          <ul class="nav__list--sublist nav__list--sublist-comp hide">
             <li class="nav__item"><a href="" class="nav__link">History</a></li>
             <li class="nav__item"><a href="" class="nav__link">Our Team</a></li>
             <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
@@ -39,7 +48,7 @@
       </ul>
       <ul class="nav__list--account">
         <li class="nav__item"><a href="" class="nav__link">Login</a></li>
-        <li class="nav__item btn--ghost"><a href="" class="nav__link">Register</a></li>
+        <li class="nav__item btn--ghost">Register</li>
       </ul>
     </nav>
   </header>
