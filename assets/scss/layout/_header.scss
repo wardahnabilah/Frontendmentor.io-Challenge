@@ -1,7 +1,8 @@
 @use '../abstract' as *;
 
 header {
-    padding: 1.5rem min(5%, 2.5rem);
+    height: 4.6875rem; // 75px
+    padding: 1.5rem 5%;
     display: flex;
     justify-content: space-between;
 
@@ -25,28 +26,27 @@ header {
             &--sublist {
                 padding-top: 1.75rem;
                 padding-left: 1.5rem;
+
+                .nav__link {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
             }
 
-            &--login {
+            &--account {
                 margin-top: 2.5rem;
-                display: grid;
-
+        
                 .nav__item {
                     font-size: $fs-300;
                     margin-bottom: 1.125rem;
-                    margin-inline: auto;
+                    text-align: center;
                 }
             }
         }
 
         &__item {
             margin-bottom: 1.75rem;
-        }
-
-        &__link {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
         }
     }
 }
