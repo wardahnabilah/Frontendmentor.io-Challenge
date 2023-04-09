@@ -78,6 +78,10 @@ header {
                     margin-bottom: 1.125rem;
                     text-align: center;
 
+                    .nav__link {
+                        display: block;
+                    }
+
                     @include breakpoint-up(mobile-lg) {
                        font-size: $fs-400;
                        margin-bottom: 0;

@@ -8,11 +8,12 @@
     background-color: $neutral-black;
     color: $neutral-almost-white;
     border: none;
-    border-radius: 1rem;
+    border-radius: .875rem;
 }
 
 .btn--ghost {
     border: 1px solid $neutral-gray;
-    border-radius: 1rem;
-    padding: 1em 4em;
+    border-radius: .875rem;
+    padding: .8em 1.6em;
+    text-align: center;
 }
