@@ -10,7 +10,7 @@
         padding: 8.125rem;
         flex-direction: row;
         gap: 6.875rem;
-        align-items: end;
+        align-items: center;
         text-align: left;
     }
 
@@ -41,6 +41,7 @@
         padding-inline: .9rem;
 
         @include breakpoint-up(mobile-lg) {
+            margin-top: auto;
             padding-inline: 2.5rem;
         }
 
@@ -64,6 +65,7 @@
 
         &--client {
             margin-top: 3rem;
+            margin-inline: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
