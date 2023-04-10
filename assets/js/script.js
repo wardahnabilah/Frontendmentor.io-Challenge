@@ -1,5 +1,9 @@
 const features = document.querySelector(".features")
 const company = document.querySelector(".company")
+const menuIcon = document.querySelector(".toggle__menu")
+const closeIcon = document.querySelector(".toggle__close")
+const nav = document.querySelector(".nav")
+const darkBg = document.querySelector(".darkBg")
 
 features.addEventListener("click", showSublist)
 company.addEventListener("click", showSublist)
@@ -19,4 +23,13 @@ function showSublist(event) {
     else {
         arrowIcon.setAttribute("src", "./assets/images/icon-arrow-down.svg")
     }
+}
+
+// Add event listener 'click' to menu and close icon
+menuIcon.addEventListener("click", toggleMenu)
+closeIcon.addEventListener("click", toggleMenu)
+
+function toggleMenu() {
+    nav.classList.toggle("hide")
+    darkBg.classList.toggle("hide")
 }

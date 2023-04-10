@@ -10,19 +10,6 @@ body {
     @include breakpoint-up(mobile-lg) {
         font-size: $fs-500;    
     }
-
-    &::after {
-        content: '';
-        position: absolute;
-        inset: 0 0 auto;
-        width: 100%;
-        height: 100%;
-        background-color: hsla(0 0% 0% / .6);
-
-        @include breakpoint-up(mobile-lg) {
-            display: none;
-        }
-    }
 }
 
 h1 {
